@@ -4,7 +4,7 @@
 @Autor: Troy Wu
 @Date: 2020-06-27 22:27:55
 @LastEditors: Troy Wu
-@LastEditTime: 2020-06-28 17:43:28
+@LastEditTime: 2020-07-09 14:38:10
 '''
 import jieba
 import glob
@@ -13,6 +13,7 @@ import jieba.posseg as psg
 import re
 from datetime import datetime, timedelta
 from dateutil.parser import parse
+from sklearn.covariance import EllipticEnvelope
 
 # 分词
 sent = '中文分词是文本处理不可或缺的一步！'
